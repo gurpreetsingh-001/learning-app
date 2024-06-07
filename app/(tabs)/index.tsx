@@ -86,7 +86,12 @@ export default function HomeScreen() {
     </View>
     <TouchableOpacity style={styles.buttonClass} onPress={()=>{console.log("Button Pressed");
     }}>
-    {/* <Button  title="Sign Up" /> */}
+    
+    <Text style={styles.buttonText}>Sign In</Text>
+    </TouchableOpacity>
+    <TouchableOpacity style={styles.buttonClass1} onPress={()=>{console.log("Button Pressed");
+    }}>
+    
     <Text style={styles.buttonText}>Sign Up</Text>
     </TouchableOpacity>
   </SafeAreaView>  );
@@ -95,7 +100,8 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 16,
+    
+    justifyContent:'center',
     marginLeft:10,
     marginRight:10,
   },
@@ -150,5 +156,12 @@ const styles = StyleSheet.create({
     color:'#ffffff',
     fontSize:18,
 
-  }
+  },
+  buttonClass1:{
+    borderRadius:10,
+    marginTop:10,
+    backgroundColor: 'blue',
+    
+
+  },
 });

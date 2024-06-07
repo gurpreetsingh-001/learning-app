@@ -84,7 +84,11 @@ export default function HomeScreen() {
         <Text style={styles.forgotPasswordText}>Forgot Password?</Text>
       </View>
     </View>
-    <Button style={styles.buttonClass} title="Sign Up" />
+    <TouchableOpacity style={styles.buttonClass} onPress={()=>{console.log("Button Pressed");
+    }}>
+    {/* <Button  title="Sign Up" /> */}
+    <Text style={styles.buttonText}>Sign Up</Text>
+    </TouchableOpacity>
   </SafeAreaView>  );
 }
 
@@ -135,8 +139,16 @@ const styles = StyleSheet.create({
   },
   buttonClass:{
     borderRadius:10,
+    marginTop:10,
     backgroundColor: '#FC4F72',
     color:"#FC4F72",
+
+  },
+  buttonText:{
+    textAlign:'center',
+    padding:10,
+    color:'#ffffff',
+    fontSize:18,
 
   }
 });
